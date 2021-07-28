@@ -1,0 +1,17 @@
+.logo {
+  margin-right: 90px;
+
+  font-family: var(--font-releway), sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo__part_black {
+  color: var(--primary-black-color);
+}
+.logo__part_white {
+  color: var(--primary-white-color);
+}
