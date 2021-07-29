@@ -60,26 +60,58 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /*====COMPONENTS====*/
 .section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .component-btn {
@@ -108,7 +140,6 @@ img {
 .social-list {
   display: flex;
   justify-content: center;
-  justify-content: space-between;
 }
 
 .social-item {
@@ -440,12 +471,8 @@ img {
   margin-bottom: 30px;
 }
 
-.edvantages-list {
-  display: flex;
-}
-
 .edvantages-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .edvantages-icon-conteiner {
@@ -474,57 +501,78 @@ img {
   letter-spacing: 0.03em;
 }
 
-.benefits-list {
-  display: flex;
-  margin-top: -30px;
-  margin-left: -30px;
+@media screen and (max-width: 767px) {
+  .edvantages-title {
+    text-align: center;
+  }
 }
 
-.benefits-item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-top: 30px;
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .edvantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .edvantages-item {
+    width: 354px;
+    margin: 15px;
+  }
 }
 
-.benefits-card {
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .edvantages-item {
+    width: 270px;
+    margin: 15px;
+  }
 }
 
-.benefits-title {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-  background: rgba(47, 48, 58, 0.8);
-  padding-top: 27px;
-  padding-bottom: 27px;
+.benefits {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits {
+    display: block;
+  }
+  .benefits-list {
+    display: flex;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .benefits-item {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .benefits-card {
+    position: relative;
+  }
+  .benefits-title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
 }
 
 .team {
   background-color: var(--background-color-light);
 }
 
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  /* на случай увеличениея кол-во членов команды*/
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
 .team-item {
-  flex-basis: calc((100% - 120) / 4);
-  margin-left: 30px;
-  margin-top: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-white-color);
 }
 
 .team-name {
@@ -545,13 +593,25 @@ img {
   margin-bottom: 16px;
 }
 
-.team-social-link {
-  fill: var(--social-color);
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.team-card {
-  padding: 30px 30px;
-  background-color: var(--primary-white-color);
+@media screen and (min-width: 1200px) {
+  .team-item {
+    flex-basis: calc((100% - 120) / 4);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-img {
+    width: 450px;
+  }
 }
 
 .clients-list {

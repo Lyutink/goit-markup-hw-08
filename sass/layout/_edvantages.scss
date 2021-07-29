@@ -1,10 +1,6 @@
-.edvantages-list {
-  display: flex;
-}
-
 .edvantages-item {
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -17,6 +13,7 @@
   background-color: var(--background-color-light);
   border-radius: 4px;
 }
+
 .edvantages-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -30,4 +27,31 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+// --768px
+@media screen and (max-width: 767px) {
+  .edvantages-title {
+    text-align: center;
+  }
+}
+// 768+
+@media screen and (min-width: 768px) {
+  .edvantages-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: -15px;
+  }
+  .edvantages-item {
+    width: 354px;
+    margin: 15px;
+  }
+}
+// 1200+
+@media screen and (min-width: 1200px) {
+  .edvantages-item {
+    width: 270px;
+    margin: 15px;
+  }
 }
