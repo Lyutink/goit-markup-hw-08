@@ -1,10 +1,8 @@
 .logo {
-  margin-right: 90px;
-
   font-family: var(--font-releway), sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -14,4 +12,14 @@
 }
 .logo__part_white {
   color: var(--primary-white-color);
+}
+
+// 1200px +
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 90px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
