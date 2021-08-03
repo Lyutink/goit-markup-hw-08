@@ -52,7 +52,9 @@
 // 1200 +
 @media screen and (min-width: 1200px) {
   .hero {
+    min-height: 600px;
     background-image: url(../images/hero/hero-desktop.jpg);
+    padding-top: 200px;
   }
   .hero-titel {
     font-size: 44px;
