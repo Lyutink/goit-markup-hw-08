@@ -21,7 +21,7 @@
   </head>
 
   <body class="body">
-    <!--
+    <!--Header-->
     <header class="header">
       <div class="container header__container">
         <nav class="navigation">
@@ -45,6 +45,13 @@
             </li>
           </ul>
         </nav>
+
+        <button type="button" class="burger-btn" data-menu-open>
+          <svg class="burger-btn__icon">
+            <use href="./images/icons.svg#burger_icon"></use>
+          </svg>
+        </button>
+
         <ul class="connect__list list">
           <li class="connect__item">
             <a class="connect__link link" href="mailto:info@devstudio.com">
@@ -64,8 +71,61 @@
           </li>
         </ul>
       </div>
+      <!--====mobil-menu===================-->
+      <div data-menu class="mobil-menu">
+        <div class="container mobil-menu__container">
+          <button type="button" data-menu-close class="mobil-menu__close-btn">
+            <svg class="mobil-menu__close-icon">
+              <use href="./images/icons.svg#close-black"></use>
+            </svg>
+          </button>
+          <ul class="mobil-menu__list list">
+            <li class="mobil-menu___item">
+              <a href="./index.html" class="mobil-menu__link link">Студия</a>
+            </li>
+            <li class="mobil-menu___item">
+              <a href="./portfolio.html" class="mobil-menu__link link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobil-menu___item">
+              <a href="#" class="mobil-menu__link link">Контакты</a>
+            </li>
+          </ul>
+          <div class="mobil-menu__contacts-wrapper">
+            <ul class="mobil-contacts list">
+              <li class="mobil-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobil-contacts__link link"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="mobil-contacts__item">
+                <a href="tel:+380961111111" class="mobil-contacts__link link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="mobil-social list">
+              <li class="mobil-social__item">
+                <a href="" class="mobil-social__link link">Instagram</a>
+              </li>
+              <li class="mobil-social__item">
+                <a href="" class="mobil-social__link link">Twitter</a>
+              </li>
+              <li class="mobil-social__item">
+                <a href="" class="mobil-social__link link">Facebook</a>
+              </li>
+              <li class="mobil-social__item">
+                <a href="" class="mobil-social__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
->-->
+
     <main>
       <!--HERO Банер-->
       <section class="hero">
@@ -770,8 +830,8 @@
           <label for="contract" class="modal-form-contract-label"
             >Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#"
               >Условия договора</a
-            ></label
-          >
+            >
+          </label>
 
           <button class="component-btn form-btn" type="submit">
             Отправить
@@ -782,5 +842,6 @@
 
     <!--==============JS========================-->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
