@@ -488,6 +488,10 @@ img {
   color: var(--title-text-color);
 }
 
+.mobil-menu__link.current {
+  color: var(--accent-color);
+}
+
 .mobil-contacts {
   margin-bottom: 64px;
 }
