@@ -130,12 +130,17 @@
 }
 
 // 0-480
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 450px) {
   .modal-form-contract-label {
     flex-wrap: wrap;
   }
+  .modal-form-comment {
+    height: 80px;
+  }
+  .modal-form-contract-label {
+    margin-bottom: 15px;
+  }
 }
-
 // 1200px +
 
 @media screen and (min-width: 1200px) {

@@ -110,7 +110,10 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
 }
-
+.mobil-contacts__item-tel {
+  font-size: 24px;
+  line-height: 1.17;
+}
 .mobil-contacts__link {
   color: var(--primary-text-color);
 }
@@ -190,7 +193,7 @@
       &::after {
         position: absolute;
         left: 0;
-        bottom: 4px;
+        bottom: 0px;
         content: "";
         display: inline-block;
         width: 100%;
