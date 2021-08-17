@@ -448,7 +448,7 @@ img {
 
 .mobil-menu__container {
   position: relative;
-  height: 100vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -502,19 +502,19 @@ img {
   margin-bottom: 64px;
 }
 
-.mobil-contacts__link {
+.mobil-contacts__link-tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
-  letter-spacing: 0.02em;
+  line-height: 1.18;
+  color: var(--accent-color);
 }
 
-.mobil-contacts__item-tel {
+.mobil-contacts__link-email {
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
-}
-
-.mobil-contacts__link {
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
@@ -541,11 +541,14 @@ img {
 }
 
 @media screen and (max-width: 390px) {
-  .mobil-contacts__link {
-    font-size: 27px;
-  }
   .mobil-menu__link {
     font-size: 30px;
+  }
+  .mobil-contacts__link-tel {
+    font-size: 27px;
+  }
+  .mobil-contacts__link-email {
+    font-size: 19px;
   }
   .mobil-social__link {
     font-size: 15px;
@@ -569,13 +572,11 @@ img {
     align-items: center;
     margin-left: 88px;
   }
-  .navigation__item {
-    position: relative;
-  }
   .navigation__item:not(:last-child) {
     margin-right: 50px;
   }
   .navigation__link {
+    position: relative;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -947,18 +948,22 @@ img {
 
 .address {
   padding-top: 20px;
+  font-style: normal;
 }
 
 .address__map {
-  margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
 
+.address-list {
+  margin-top: 8px;
+}
+
 .address__item:not(:last-child) {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .address__link {
