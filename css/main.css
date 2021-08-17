@@ -648,6 +648,9 @@ img {
   .connect__item:not(:last-child) {
     margin-right: 50px;
   }
+  .navigation__link.current::after {
+    bottom: 5px;
+  }
 }
 
 .hero {
